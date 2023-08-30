@@ -17,15 +17,13 @@ const resultEl = document.querySelector(".result");
 
 while (numberList.length < 2) {
    const number = Number(prompt("Inserisci un numero:"));
-   if (isNaN(number)) {
+   if (isNaN(number) || number == "") {
       alert("Non è un numero!")
    } else {
       numberList.push(number);
    }
    
 }
-
-console.log(numberList);
 
 if (numberList[0] > numberList[1]) {
    resultEl.innerHTML = `<div>${numberList[0]}</div>`;
