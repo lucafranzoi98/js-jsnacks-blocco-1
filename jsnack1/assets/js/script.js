@@ -17,7 +17,12 @@ const resultEl = document.querySelector(".result");
 
 while (numberList.length < 2) {
    const number = Number(prompt("Inserisci un numero:"));
-   numberList.push(number);
+   if (isNaN(number)) {
+      alert("Non è un numero!")
+   } else {
+      numberList.push(number);
+   }
+   
 }
 
 console.log(numberList);
