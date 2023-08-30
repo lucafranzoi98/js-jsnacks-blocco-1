@@ -12,15 +12,12 @@ if (firstNumber > secondNumber) {
    resultEl.innerHTML = `<div>I numeri sono uguali.</div>`;
 } */
 
-
-let i = 0;
 const numberList = [];
 const resultEl = document.querySelector(".result");
 
-while (i < 2) {
+while (numberList.length < 2) {
    const number = Number(prompt("Inserisci un numero:"));
    numberList.push(number);
-   i++;
 }
 
 console.log(numberList);
